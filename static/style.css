@@ -30,7 +30,9 @@ body {
 }
 
 header {
-    justify-content: center;
+    flex-direction: column;
+
+    background-color: var(--fbg);
 }
 
 article {

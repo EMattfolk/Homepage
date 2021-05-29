@@ -1,3 +1,40 @@
-<h1>
+<style type="text/css">
+nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-tab {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 8em;
+
+    color: var(--fg);
+}
+
+.nav-tab:hover {
+    text-decoration: underline;
+}
+
+.selected {
+    background-color: var(--bg);
+}
+</style>
+<h1 style="align-self: center;">
     Mattfolk.xyz
 </h1>
+<nav>
+    <a href="/" class="nav-tab selected">
+        <h3>Home</h3>
+    </a>
+    <a href="/about" class="nav-tab">
+        <h3>About</h3>
+    </a>
+    <a href="/projects" class="nav-tab">
+        <h3>Projects</h3>
+    </a>
+</nav>
