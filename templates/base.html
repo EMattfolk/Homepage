@@ -12,17 +12,8 @@
         </script>
     </head>
     <body>
-        <header>
-            <h1>
-                mattfolk.xyz
-            </h1>
-        </header>
-        <article>
-            {{ content | safe }}
-        </article>
-        <footer>
-            Want the source code? Find it on&nbsp;
-            <a href="https://github.com/EMattfolk/mattfolk.xyz">GitHub</a>.
-        </footer>
+        <header>{% include "header.html" %}</header>
+        <article>{{ content | safe }}</article>
+        <footer>{% include "footer.html" %}</footer>
     </body>
 </html>
