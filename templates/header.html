@@ -28,13 +28,10 @@ nav {
     Mattfolk.xyz
 </h1>
 <nav>
-    <a href="/" class="nav-tab selected">
-        <h3>Home</h3>
+    {% for title, url in navigation %}
+    {% set selected = "selected" if title.lower() == page else "" %}
+    <a href="{{ url }}" class="nav-tab {{ selected }}">
+        <h3>{{ title }}</h3>
     </a>
-    <a href="/about" class="nav-tab">
-        <h3>About</h3>
-    </a>
-    <a href="/projects" class="nav-tab">
-        <h3>Projects</h3>
-    </a>
+    {% endfor %}
 </nav>
