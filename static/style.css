@@ -16,10 +16,10 @@ html, body {
 /* Flex all the things */
 body, footer, article, header {
     display: flex;
+    flex-direction: column;
 }
 
 body {
-    flex-direction: column;
     align-items: stretch;
 
     padding: 0;
@@ -30,14 +30,11 @@ body {
 }
 
 header {
-    flex-direction: column;
-
     background-color: var(--fbg);
 }
 
 article {
     flex-grow: 1;
-    flex-direction: column;
     align-self: center; /* Because of max-width */
 
     max-width: 40em;
@@ -45,7 +42,7 @@ article {
 }
 
 footer {
-    justify-content: center;
+    align-items: center;
 
     background-color: var(--fbg);
 }

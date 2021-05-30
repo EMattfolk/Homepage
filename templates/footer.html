@@ -1,12 +1,17 @@
+<!doctype html>
 <style type="text/css">
-#footer-div {
+.footer-div {
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
 
     max-width: 40em;
+}
+.footer-div.col {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 .footer-item {
     margin: 0.5em;
@@ -14,15 +19,32 @@
 }
 </style>
 
-<div id="footer-div">
-    <h2 class="footer-item">Links</h2>
-    <p class="footer-item">
-        <a href="https://github.com/EMattfolk/mattfolk.xyz">Website</a>
-    </p>
-    <p class="footer-item">
-        <a href="https://github.com/EMattfolk">Github</a>
-    </p>
-    <p class="footer-item">
-        <a href="mailto:erik.mattfolk@gmail.com">Email</a>
-    </p>
+<div class="footer-div">
+    <div class="footer-div col">
+        <h3 class="footer-item">Contact</h3>
+        <p class="footer-item">
+            <a href="https://github.com/EMattfolk">
+                <i class="fab fa-github"></i> EMattfolk
+            </a>
+        </p>
+        <p class="footer-item">
+            <a href="mailto:erik.mattfolk@gmail.com">
+                <i class="fas fa-at"></i> erik.mattfolk@gmail.com
+            </a>
+        </p>
+    </div>
+    <div class="footer-div col">
+        <h3 class="footer-item">Source</h3>
+        <p class="footer-item">
+            <a href="https://github.com/EMattfolk/mattfolk.xyz">
+                <i class="fab fa-github"></i> EMattfolk/mattfolk.xyz
+            </a>
+        </p>
+    </div>
 </div>
+<p>
+    © Erik Mattfolk 2021 |
+    <a href="https://github.com/EMattfolk/mattfolk.xyz/blob/master/LICENSE">
+        MIT
+    </a>
+</p>
