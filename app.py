@@ -26,11 +26,11 @@ def home():
     return page("home")
 
 
-@app.route("/cv/")
+@app.route("/cv")
 def cv():
     return page("cv")
 
 
-@app.route("/projects/")
+@app.route("/projects")
 def projects():
     return page("projects")
