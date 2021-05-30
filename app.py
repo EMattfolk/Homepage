@@ -34,3 +34,8 @@ def cv():
 @app.route("/projects")
 def projects():
     return page("projects")
+
+
+@app.route("/404.html")
+def not_found():
+    return page("404")
