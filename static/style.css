@@ -47,6 +47,15 @@ footer {
     background-color: var(--fbg);
 }
 
+div {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 a {
     color: var(--a);
     text-decoration: none;
